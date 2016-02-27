@@ -1,0 +1,23 @@
+{
+  "name": "matr-app",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Birkir Gudjonsson <birkir.gudjonsson@gmail.com>",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/birkir/matr-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/birkir/matr-app/issues"
+  },
+  "homepage": "https://github.com/birkir/matr-app#readme",
+  "dependencies": {
+    "clamp": "^1.0.1",
+    "re-base": "^1.5.1",
+    "react-native": "^0.20.0",
+    "react-native-linear-gradient": "git+https://github.com/brentvatne/react-native-linear-gradient.git"
+  }
+}
