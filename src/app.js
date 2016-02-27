@@ -2,7 +2,7 @@
 
 import React, { Component, Navigator, StatusBar } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import SceneMain from './scenes/Main';
+import SceneMain from './scenes/  Main';
 
 /**
  * App Component

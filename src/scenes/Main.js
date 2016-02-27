@@ -15,9 +15,9 @@ import CardSwiper from '../components/CardSwiper';
  */
 export default class SceneMain extends Component {
 
-	/**
-	 * Class constructor
-	 */
+  /**
+   * Class constructor
+   */
   constructor (...args) {
 
     super(...args);
@@ -39,7 +39,7 @@ export default class SceneMain extends Component {
    */
   componentDidMount () {
 
-  	// bind places to this state's places object
+    // bind places to this state's places object
     this.ref = this.base.listenTo('places', {
       context: this,
       asArray: true,
@@ -76,7 +76,7 @@ export default class SceneMain extends Component {
    */
   renderNoMoreCards () {
     return (
-		  <Text style={styles.noMoreCards}>Att bú</Text>
+      <Text style={styles.noMoreCards}>Att bú</Text>
     );
   }
 
@@ -85,7 +85,7 @@ export default class SceneMain extends Component {
    * @return {void}
    */
   _onSwipeLeft (card) {
-  	console.log('card %o was swiped left', card);
+    console.log('card %o was swiped left', card);
   }
 
   /**
@@ -93,7 +93,7 @@ export default class SceneMain extends Component {
    * @return {void}
    */
   _onSwipeRight (card) {
-		console.log('card %o was swiped right', card);
+    console.log('card %o was swiped right', card);
   }
 
   /**
@@ -113,9 +113,9 @@ export default class SceneMain extends Component {
     }
 
     return (
-	    <View style={styles.container}>
-	      <CardSwiper cards={this.state.places} renderCard={this.renderCard} renderNoMoreCards={this.renderNoMoreCards} onSwipeRight={this._onSwipeRight} onSwipeLeft={this._onSwipeLeft} loop={true} style={styles.swipeCards} rightLabel="Good" leftLabel="Bad" />
-	    </View>
+      <View style={styles.container}>
+        <CardSwiper cards={this.state.places} renderCard={this.renderCard} renderNoMoreCards={this.renderNoMoreCards} onSwipeRight={this._onSwipeRight} onSwipeLeft={this._onSwipeLeft} loop={true} style={styles.swipeCards} rightLabel="Good" leftLabel="Bad" />
+      </View>
     );
   }
 }
@@ -124,24 +124,24 @@ export default class SceneMain extends Component {
  * @const {StyleSheet} Component styles
  */
 const styles = StyleSheet.create({
-	loadingContainer: {
-		flex: 1,
-		justifyContent: 'center',
-		alignItems: 'center',
-	},
-	loadingLogo: {
+  loadingContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  loadingLogo: {
     fontSize: 48,
     fontWeight: '100',
     color: '#fff',
     backgroundColor: 'transparent'
-	},
-	container: {
-		flex: 1
-	},
-	swipeCards: {
-		backgroundColor: 'transparent'
-	},
-	noMoreCards: {
-		color: '#fff'
-	}
+  },
+  container: {
+    flex: 1
+  },
+  swipeCards: {
+    backgroundColor: 'transparent'
+  },
+  noMoreCards: {
+    color: '#fff'
+  }
 });

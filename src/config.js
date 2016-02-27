@@ -1,3 +1,3 @@
 export default {
-	FIREBASE_URL: 'https://matr.firebaseio.com/'
+  FIREBASE_URL: 'https://matr.firebaseio.com/'
 }
